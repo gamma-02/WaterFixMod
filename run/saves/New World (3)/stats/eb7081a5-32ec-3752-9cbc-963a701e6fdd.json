@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:water_bucket": 2,
+      "minecraft:oak_leaves": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 698,
+      "minecraft:walk_one_cm": 312,
+      "minecraft:total_world_time": 726,
+      "minecraft:fly_one_cm": 192,
+      "minecraft:walk_on_water_one_cm": 572,
+      "minecraft:crouch_one_cm": 34,
+      "minecraft:sneak_time": 31,
+      "minecraft:play_time": 698,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 698
+    }
+  },
+  "DataVersion": 4671
+}

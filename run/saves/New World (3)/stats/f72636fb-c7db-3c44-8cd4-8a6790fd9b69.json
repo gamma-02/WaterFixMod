@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:grass_block": 14,
+      "minecraft:water_bucket": 12,
+      "minecraft:barrier": 12,
+      "minecraft:light_gray_bed": 2,
+      "minecraft:chest": 1,
+      "minecraft:cornflower": 1,
+      "minecraft:spruce_trapdoor": 4,
+      "minecraft:oak_leaves": 5,
+      "minecraft:oak_planks": 44,
+      "minecraft:oak_slab": 10,
+      "minecraft:birch_fence_gate": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:oak_planks": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 18630,
+      "minecraft:walk_one_cm": 4065,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 524,
+      "minecraft:play_time": 18630,
+      "minecraft:jump": 28,
+      "minecraft:time_since_death": 18630,
+      "minecraft:drop": 1,
+      "minecraft:total_world_time": 39984,
+      "minecraft:fly_one_cm": 4712,
+      "minecraft:walk_on_water_one_cm": 1415,
+      "minecraft:crouch_one_cm": 9,
+      "minecraft:sneak_time": 136
+    }
+  },
+  "DataVersion": 4671
+}

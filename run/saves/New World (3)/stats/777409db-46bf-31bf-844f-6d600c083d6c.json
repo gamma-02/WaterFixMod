@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:bell_ring": 7,
+      "minecraft:sprint_one_cm": 43,
+      "minecraft:time_since_rest": 1426,
+      "minecraft:walk_one_cm": 534,
+      "minecraft:total_world_time": 1443,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 7479,
+      "minecraft:sneak_time": 78,
+      "minecraft:play_time": 1426,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 1426
+    },
+    "minecraft:picked_up": {
+      "minecraft:bell": 1
+    }
+  },
+  "DataVersion": 4671
+}

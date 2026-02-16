@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:stone": 37,
+      "minecraft:water_bucket": 3,
+      "minecraft:cherry_hanging_sign": 9,
+      "minecraft:stone_button": 10,
+      "minecraft:oak_slab": 14,
+      "minecraft:command_block": 11
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 830,
+      "minecraft:time_since_rest": 6514,
+      "minecraft:walk_one_cm": 8596,
+      "minecraft:total_world_time": 23424,
+      "minecraft:fly_one_cm": 18813,
+      "minecraft:walk_on_water_one_cm": 269,
+      "minecraft:crouch_one_cm": 222,
+      "minecraft:sneak_time": 227,
+      "minecraft:play_time": 6514,
+      "minecraft:jump": 19,
+      "minecraft:time_since_death": 6514
+    }
+  },
+  "DataVersion": 4671
+}

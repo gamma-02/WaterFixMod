@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:kelp": 21
+    },
+    "minecraft:used": {
+      "minecraft:soul_sand": 7,
+      "minecraft:water_bucket": 8,
+      "minecraft:bone_meal": 19,
+      "minecraft:glass": 85,
+      "minecraft:kelp": 14,
+      "minecraft:stone_button": 7,
+      "minecraft:command_block": 10
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2561,
+      "minecraft:walk_one_cm": 1202,
+      "minecraft:total_world_time": 2798,
+      "minecraft:fly_one_cm": 5486,
+      "minecraft:walk_under_water_one_cm": 5193,
+      "minecraft:walk_on_water_one_cm": 291,
+      "minecraft:sneak_time": 136,
+      "minecraft:play_time": 2561,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 2561
+    }
+  },
+  "DataVersion": 4671
+}

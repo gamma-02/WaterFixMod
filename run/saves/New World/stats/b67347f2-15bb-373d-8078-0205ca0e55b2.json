@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 9009,
+      "minecraft:walk_one_cm": 10187,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 9009,
+      "minecraft:damage_dealt": 1830,
+      "minecraft:jump": 53,
+      "minecraft:time_since_death": 9009,
+      "minecraft:aviate_one_cm": 106689,
+      "minecraft:sprint_one_cm": 3127,
+      "minecraft:total_world_time": 9639,
+      "minecraft:fly_one_cm": 48718,
+      "minecraft:crouch_one_cm": 674,
+      "minecraft:sneak_time": 203
+    },
+    "minecraft:used": {
+      "minecraft:stone": 3,
+      "minecraft:water_bucket": 1,
+      "minecraft:oak_planks": 1,
+      "minecraft:enderman_spawn_egg": 10,
+      "minecraft:netherite_spear": 14,
+      "minecraft:firework_rocket": 8
+    }
+  },
+  "DataVersion": 4671
+}

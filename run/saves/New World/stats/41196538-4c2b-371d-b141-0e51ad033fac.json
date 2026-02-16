@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4417,
+      "minecraft:walk_one_cm": 3917,
+      "minecraft:total_world_time": 11387,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 1329,
+      "minecraft:walk_on_water_one_cm": 39,
+      "minecraft:crouch_one_cm": 87,
+      "minecraft:sneak_time": 121,
+      "minecraft:play_time": 4417,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 4417
+    },
+    "minecraft:used": {
+      "minecraft:stone": 7,
+      "minecraft:water_bucket": 3,
+      "minecraft:glow_item_frame": 2,
+      "minecraft:stone_button": 5,
+      "minecraft:command_block": 5
+    },
+    "minecraft:picked_up": {
+      "minecraft:stone_button": 2
+    }
+  },
+  "DataVersion": 4671
+}

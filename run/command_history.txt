@@ -1,0 +1,50 @@
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:shulker_box"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bell"}}
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bell"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bell"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:bell"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_portal"}}
+/summon minecraft:block_display
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_portal"}}
+/data get entity c0c6b626-4ee8-463f-a66a-1b5198c3a795
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_portal"}}
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/tick unfreeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:end_gateway"}}
+/summon minecraft:falling_block 23 -55 2 {BlockState:{Name:"minecraft:water",Properties:{level:4}}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:red_bed"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:barrier"}}
+/setblock ~ ~ ~ air strict
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:banner"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:white_sbanner"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:white_banner"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:chest"},TileEntityData:{Items:[{id:"minecraft:diamond",Count:1b,Slot:0b}]}}
+/tick unfreeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:white_banner"}}
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:air"}}
+/tick freeze
+/summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:air"}}
+/tick step
+/reloadWaterFixConfig
+/data get entity a653d370-6010-45a7-b434-a5c9a3f7d905
+/data get entity 796d4d8f-6c9f-48ce-a910-43f33ce7eb37
+/summon minecraft:block_display
+/data get entity @e[type=minecraft:block_display,limit=1]
+/data modify entity @e[type=minecraft:block_display,limit=1] block_state.Name set value "minecraft:red_bed"
+/data get entity @e[type=minecraft:block_display,limit=1]
+/data get block 14 -60 3
+/setblock ~ ~ ~ minecraft:white_banner{patterns:[{"pattern":"minecraft:rhombus","color":"black"}]}
+/data get block 15 -60 4
+/data modify entity @e[type=minecraft:block_display,limit=1] block_state.Name set value "minecraft:red_bed"
+/data modify entity @e[type=minecraft:block_display,limit=1] block_state.Name set value "minecraft:white_banner"
+/setblock ~ ~ ~ chest[type=left]
+/setblock ~ ~ ~ chest[type=right]

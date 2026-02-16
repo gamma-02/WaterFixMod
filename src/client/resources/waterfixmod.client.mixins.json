@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.gamma02.waterfixmod.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BlockRenderDispatcherMixin",
+    "FallingBlockRendererMixin",
+    "FallingBlockRenderStateMixin",
+    "LevelRenderStateAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

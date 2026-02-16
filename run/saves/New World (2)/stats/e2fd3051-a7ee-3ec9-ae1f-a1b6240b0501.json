@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 24,
+      "minecraft:time_since_rest": 14661,
+      "minecraft:walk_one_cm": 4556,
+      "minecraft:total_world_time": 15172,
+      "minecraft:fly_one_cm": 8280,
+      "minecraft:walk_on_water_one_cm": 67,
+      "minecraft:crouch_one_cm": 85,
+      "minecraft:sneak_time": 253,
+      "minecraft:play_time": 14661,
+      "minecraft:jump": 20,
+      "minecraft:time_since_death": 14661
+    },
+    "minecraft:used": {
+      "minecraft:stone": 31,
+      "minecraft:water_bucket": 6,
+      "minecraft:spruce_trapdoor": 21,
+      "minecraft:oak_slab": 1
+    }
+  },
+  "DataVersion": 4671
+}

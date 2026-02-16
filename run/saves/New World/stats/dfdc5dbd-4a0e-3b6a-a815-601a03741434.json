@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:enderman": 4
+    },
+    "minecraft:used": {
+      "minecraft:grass_block": 200,
+      "minecraft:netherite_sword": 3,
+      "minecraft:enderman_spawn_egg": 11,
+      "minecraft:firework_rocket": 4,
+      "minecraft:stone": 446,
+      "minecraft:elytra": 1,
+      "minecraft:water_bucket": 3,
+      "minecraft:bone_meal": 2,
+      "minecraft:poppy": 15,
+      "minecraft:cornflower": 24,
+      "minecraft:oak_planks": 27,
+      "minecraft:ender_pearl": 2,
+      "minecraft:netherite_spear": 16
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 1,
+      "minecraft:glow_item_frame": 1,
+      "minecraft:stone_button": 6,
+      "minecraft:netherite_spear": 1,
+      "minecraft:poppy": 1,
+      "minecraft:oak_planks": 1,
+      "minecraft:stone": 1,
+      "minecraft:bamboo_mosaic": 1,
+      "minecraft:command_block": 1,
+      "minecraft:enderman_spawn_egg": 4,
+      "minecraft:water_bucket": 1,
+      "minecraft:ender_pearl": 6,
+      "minecraft:grass_block": 4,
+      "minecraft:firework_rocket": 1,
+      "minecraft:lava_bucket": 1,
+      "minecraft:elytra": 2,
+      "minecraft:cornflower": 1,
+      "minecraft:bone_meal": 1,
+      "minecraft:netherite_sword": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 5780,
+      "minecraft:walk_one_cm": 18519,
+      "minecraft:mob_kills": 4,
+      "minecraft:damage_dealt": 1860,
+      "minecraft:play_time": 94282,
+      "minecraft:jump": 76,
+      "minecraft:time_since_death": 5753,
+      "minecraft:aviate_one_cm": 60967,
+      "minecraft:sprint_one_cm": 10582,
+      "minecraft:total_world_time": 423162,
+      "minecraft:fly_one_cm": 445315,
+      "minecraft:crouch_one_cm": 870,
+      "minecraft:sneak_time": 1189,
+      "minecraft:deaths": 1
+    }
+  },
+  "DataVersion": 4671
+}

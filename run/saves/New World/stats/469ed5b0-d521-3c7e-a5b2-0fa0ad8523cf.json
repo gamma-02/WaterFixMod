@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:ender_pearl": 2,
+      "minecraft:grass_block": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 69991,
+      "minecraft:walk_one_cm": 3236,
+      "minecraft:total_world_time": 81735,
+      "minecraft:fly_one_cm": 28726,
+      "minecraft:mob_kills": 2,
+      "minecraft:crouch_one_cm": 24,
+      "minecraft:sneak_time": 92,
+      "minecraft:play_time": 69991,
+      "minecraft:damage_dealt": 800,
+      "minecraft:jump": 25,
+      "minecraft:time_since_death": 69991,
+      "minecraft:drop": 1
+    },
+    "minecraft:used": {
+      "minecraft:stone": 27,
+      "minecraft:grass_block": 86,
+      "minecraft:glow_item_frame": 1,
+      "minecraft:netherite_sword": 7,
+      "minecraft:enderman_spawn_egg": 61
+    },
+    "minecraft:killed": {
+      "minecraft:enderman": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:ender_pearl": 1
+    }
+  },
+  "DataVersion": 4671
+}

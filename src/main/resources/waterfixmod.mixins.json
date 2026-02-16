@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.gamma02.waterfixmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FallingBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

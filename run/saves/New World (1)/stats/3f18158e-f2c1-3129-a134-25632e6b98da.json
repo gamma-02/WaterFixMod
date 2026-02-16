@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:crimson_roots": 5
+    },
+    "minecraft:killed": {
+      "minecraft:slime": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1748,
+      "minecraft:walk_one_cm": 1768,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 2,
+      "minecraft:play_time": 1748,
+      "minecraft:damage_dealt": 175,
+      "minecraft:jump": 12,
+      "minecraft:time_since_death": 1748,
+      "minecraft:sprint_one_cm": 574,
+      "minecraft:total_world_time": 7468,
+      "minecraft:fly_one_cm": 73433,
+      "minecraft:walk_on_water_one_cm": 79,
+      "minecraft:sneak_time": 64
+    },
+    "minecraft:used": {
+      "minecraft:crimson_nylium": 1
+    }
+  },
+  "DataVersion": 4671
+}

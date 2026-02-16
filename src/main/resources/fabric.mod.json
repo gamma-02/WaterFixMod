@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "waterfixmod",
+  "version": "${version}",
+  "name": "Water Rendering Fix",
+  "description": "",
+  "authors": ["gamma_02", "Gneiss Name"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/waterfixmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.gamma02.waterfixmod.client.WaterFixModClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "waterfixmod.client.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "waterfixmod.mixins.json",
+      "environment": "*"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
