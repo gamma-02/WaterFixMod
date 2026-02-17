@@ -22,10 +22,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(FallingBlockEntity.class)
 public abstract class FallingBlockEntityMixin extends Entity {
-    @Shadow@Nullable public CompoundTag blockData;
+    @Shadow @Nullable public CompoundTag blockData;
     @Unique
     private static final EntityDataAccessor<String> BLOCK_ENTITY_DATA = SynchedEntityData.defineId(FallingBlockEntity.class, EntityDataSerializers.STRING);
-
 
     public FallingBlockEntityMixin(EntityType<?> entityType, Level level) {
         super(entityType, level);
@@ -55,5 +54,4 @@ public abstract class FallingBlockEntityMixin extends Entity {
         else
             this.getEntityData().set(BLOCK_ENTITY_DATA, "");
     }
-
 }

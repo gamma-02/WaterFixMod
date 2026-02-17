@@ -29,7 +29,9 @@ public class FallingBlockSubmitter {
     public void submitForFallingBlockRendering(SubmitNodeCollector instance, PoseStack poseStack,
                                                MovingBlockRenderState movingBlockRenderState,
                                                FallingBlockRenderState state) {
+
         Block b = state.movingBlockRenderState.blockState.getBlock();
+
         if (!(b instanceof BedBlock) && !(b instanceof AbstractBannerBlock) && !(b instanceof AbstractChestBlock<?>))
             instance.submitBlock(poseStack, movingBlockRenderState.blockState, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
 
@@ -75,6 +77,7 @@ public class FallingBlockSubmitter {
     private static void tryLoadNBT(HasRendererNBT state, BlockEntity entity) {
         try {
             try (ProblemReporter.ScopedCollector scopedCollector = new ProblemReporter.ScopedCollector(entity.problemPath(), LOGGER)) {
+                assert Minecraft.getInstance().level != null;
                 entity.loadWithComponents(TagValueInput.create(scopedCollector, Minecraft.getInstance().level.registryAccess(), Objects.requireNonNull(state.waterFixMod$getNBT())));
             }
         } catch (Throwable var11) {

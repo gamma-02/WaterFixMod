@@ -7,7 +7,7 @@
     "BlockRenderDispatcherMixin",
     "FallingBlockRendererMixin",
     "FallingBlockRenderStateMixin",
-    "LevelRenderStateAccessor"
+    "LevelRenderStateAccessor",
   ],
   "injectors": {
     "defaultRequire": 1
