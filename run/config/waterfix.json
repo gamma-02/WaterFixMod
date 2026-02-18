@@ -1,6 +1,0 @@
-{
-  "useSpecialWaterTesselationForNormalWater": false,
-  "renderBackfacesForFluids": true,
-  "renderBlockEntitesInFallingBlocks": true,
-  "replaceFallingBlockRendering": true
-}

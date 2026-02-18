@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WaterFixMod.iml" filepath="$PROJECT_DIR$/.idea/modules/WaterFixMod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/WaterFixMod.client.iml" filepath="$PROJECT_DIR$/.idea/modules/WaterFixMod.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/WaterFixMod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/WaterFixMod.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/WaterFixMod.test.iml" filepath="$PROJECT_DIR$/.idea/modules/WaterFixMod.test.iml" />
