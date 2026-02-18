@@ -45,6 +45,7 @@ public abstract class BlockRenderDispatcherMixin {
     @Unique
     SpecialWaterTesselation tesselator = null;
 
+    //replace the original tesselator when we are configured to
     @WrapOperation(method = "renderLiquid", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/block/LiquidBlockRenderer;tesselate(Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;)V"))
     void invokeSpecialTesselation(LiquidBlockRenderer instance, BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, VertexConsumer vertexConsumer, BlockState blockState, FluidState fluidState, Operation<Void> original){
         if(Config.CONFIG.useSpecialWaterTesselationForNormalWater()){
@@ -54,6 +55,7 @@ public abstract class BlockRenderDispatcherMixin {
         }
     }
 
+    //render fluid inside of blocks when renderSingleBlock is called
     @Inject(method = "renderSingleBlock", at = @At("HEAD"))
     void invokeSpecialTesselationForFluidsInSingleBlockRendering(BlockState blockState, PoseStack poseStack, MultiBufferSource multiBufferSource, int i, int j, CallbackInfo ci){
         if(blockState.getFluidState().getType() == Fluids.EMPTY)

@@ -8,6 +8,7 @@
     "FallingBlockRendererMixin",
     "FallingBlockRenderStateMixin",
     "LevelRenderStateAccessor",
+    "FallingBlockEntityClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1

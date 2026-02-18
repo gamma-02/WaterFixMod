@@ -29,8 +29,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class SpecialWaterTesselation {
     private static final float MAX_FLUID_HEIGHT = 0.8888889F;
 
-    // /execute in minecraft:overworld run tp @s 4.22 -57.07 3.87 -1389.22 35.07
-
     public static int defaultLightColor = 0xf00000;
 
     public final TextureAtlasSprite lavaStill;

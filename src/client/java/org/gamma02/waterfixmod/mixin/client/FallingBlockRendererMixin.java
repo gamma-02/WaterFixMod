@@ -12,26 +12,36 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import org.gamma02.waterfixmod.client.Config;
 import org.gamma02.waterfixmod.client.FallingBlockSubmitter;
-import org.gamma02.waterfixmod.client.HasRendererNBT;
+import org.gamma02.waterfixmod.client.HasExtraBlockData;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(FallingBlockRenderer.class)
 public class FallingBlockRendererMixin {
+    @Unique
+    private static final int SUBMITS_PER_MAP_CLEAR = 10000;
 
+    @Unique
     FallingBlockSubmitter submitter = new FallingBlockSubmitter();
 
+    @Unique
+    int submits = 0;
+
+    //make it so that blocks always render (because they all should render correctly) if configured to
     @WrapOperation(method = "submit(Lnet/minecraft/client/renderer/entity/state/FallingBlockRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/CameraRenderState;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;getRenderShape()Lnet/minecraft/world/level/block/RenderShape;"))
     public RenderShape wrapGetRenderState(BlockState instance, Operation<RenderShape> original){
         if(Config.CONFIG.replaceFallingBlockRendering())
             return RenderShape.MODEL;
         else
             return original.call(instance);
-
     }
 
+    //replace a call to submitMovingBlock with a custom replacement if configured to do that
+    //and then periodically delete all of the removed falling block entities from our submitter's hash map
+    //so that there's no memory leak :D
     @WrapOperation(method = "submit(Lnet/minecraft/client/renderer/entity/state/FallingBlockRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lnet/minecraft/client/renderer/state/CameraRenderState;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/SubmitNodeCollector;submitMovingBlock(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/block/MovingBlockRenderState;)V"))
     public void wrapSubmitMovingBlock(SubmitNodeCollector instance, PoseStack poseStack, MovingBlockRenderState movingBlockRenderState, Operation<Void> original, FallingBlockRenderState state){
         if(Config.CONFIG.replaceFallingBlockRendering()) {
@@ -39,11 +49,20 @@ public class FallingBlockRendererMixin {
         }else{
             original.call(instance, poseStack, movingBlockRenderState);
         }
+
+        submits++;
+
+        if(submits >= SUBMITS_PER_MAP_CLEAR){
+            submitter.deleteDeadBlockEntities();
+            submits = 0;
+        }
     }
 
+    //add the data to our custom handler for render states
     @Inject(method = "extractRenderState(Lnet/minecraft/world/entity/item/FallingBlockEntity;Lnet/minecraft/client/renderer/entity/state/FallingBlockRenderState;F)V", at = @At("HEAD"))
     public void appendTileEntityDataToRenderState(FallingBlockEntity fallingBlockEntity, FallingBlockRenderState fallingBlockRenderState, float f, CallbackInfo ci){
-        ((HasRendererNBT) fallingBlockRenderState).waterFixMod$setNBT(fallingBlockEntity.blockData);
+        ((HasExtraBlockData) fallingBlockRenderState).waterFixMod$setNBT(fallingBlockEntity.blockData);
+        ((HasExtraBlockData) fallingBlockRenderState).waterFixMod$setUUID(fallingBlockEntity.getUUID());
     }
 
 }

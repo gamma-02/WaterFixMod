@@ -12,16 +12,15 @@
   "entrypoints": {
     "client": [
       "org.gamma02.waterfixmod.client.WaterFixModClient"
+    ],
+    "main": [
+      "org.gamma02.waterfixmod.WaterFixMod"
     ]
   },
   "mixins": [
     {
       "config": "waterfixmod.client.mixins.json",
       "environment": "client"
-    },
-    {
-      "config": "waterfixmod.mixins.json",
-      "environment": "*"
     }
   ],
   "depends": {
